@@ -3,37 +3,18 @@
 
 ## 📦 Available Executables
 
-### Windows Distribution (Ready for Testing)
+Official 1.0.0-beta installers for Windows (x64 and ARM64) are provided via our official website. 
 
-#### Primary Installer (Recommended)
-- **File**: `Coconut AI Setup 1.0.0-beta.exe`
-- **Size**: ~220 MB
-- **Architecture**: Both x64 and ARM64 included
-- **Type**: NSIS Installer with desktop shortcuts
-- **Features**: Hybrid-RAG system, Logic Trace UI
-
-#### Portable Version (No Installation Required)
-- **File**: `Coconut AI Portable 1.0.0-beta.exe`  
-- **Size**: ~220 MB
-- **Architecture**: Both x64 and ARM64 included
-- **Type**: Portable executable - can run from USB drive
-- **Features**: Full offline capability, zero installation
+*(Note: These are not hosted on GitHub to protect intellectual property and manage distribution.)*
 
 ## 🚀 Installation & Setup
 
-### Method 1: Installer (Recommended for Most Users)
-1. Download `InsightEngine Enterprise Setup 1.0.0.exe`
-2. Right-click → "Run as Administrator"
-3. Follow installation wizard
-4. Launch from desktop shortcut or Start Menu
+### Method 1: Official Installer
+1. Visit the Coconut AI website.
+2. Download the appropriate version for your system.
+3. Run the installer and follow the on-screen instructions.
 
-### Method 2: Portable (For USB/Testing)
-1. Download `InsightEngine Enterprise 1.0.0.exe`
-2. Create folder (e.g., `C:\CoconutAI`)
-3. Place executable in folder
-4. Double-click to run (no installation required)
-
-### Method 3: Developer Version
+### Method 2: Developer Version (Run from Source)
 1. Clone repository: `git clone https://github.com/thomaglads/coconut-ai.git`
 2. Install dependencies: `npm install`
 3. Run in development: `npm run electron:dev`
@@ -141,9 +122,8 @@
 3. **Network Share**: Place on internal network drive
 
 ### Self-Hosted Distribution
-1. **Web Server**: Host executables on internal web server
-2. **GitHub Releases**: Upload to GitHub releases page
-3. **Package Manager**: Create internal npm/Chocolatey package
+1. **Web Server**: Host executables on private web server
+2. **Package Manager**: Create internal npm/Chocolatey package
 
 ## 📊 Success Metrics
 
