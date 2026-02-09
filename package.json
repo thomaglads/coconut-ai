@@ -11,10 +11,10 @@
   "homepage": "https://coconut-ai.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coconut-ai/coconut-ai-desktop.git"
+    "url": "https://github.com/thomaglads/coconut-ai.git"
   },
   "bugs": {
-    "url": "https://github.com/coconut-ai/coconut-ai-desktop/issues"
+    "url": "https://github.com/thomaglads/coconut-ai/issues"
   },
   "keywords": [
     "ai",
@@ -91,7 +91,7 @@
     },
     "files": [
       "dist/**/*",
-      "electron/**/*", 
+      "electron/**/*",
       "electron.js",
       "package.json"
     ],
@@ -105,11 +105,17 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         },
         {
-          "target": "portable", 
-          "arch": ["x64", "arm64"]
+          "target": "portable",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         }
       ],
       "icon": "public/coconut-logo.png",
@@ -120,11 +126,17 @@
       "target": [
         {
           "target": "dmg",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         },
         {
           "target": "zip",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         }
       ],
       "icon": "public/coconut-logo.png",
@@ -135,11 +147,17 @@
       "target": [
         {
           "target": "AppImage",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         },
         {
           "target": "deb",
-          "arch": ["x64", "arm64"]
+          "arch": [
+            "x64",
+            "arm64"
+          ]
         }
       ],
       "icon": "public/coconut-logo.png",
@@ -163,8 +181,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "coconut-ai",
-        "repo": "coconut-ai-desktop"
+        "owner": "thomaglads",
+        "repo": "coconut-ai"
       }
     ]
   },
@@ -173,7 +191,7 @@
     "architecture": "hybrid-rag",
     "features": [
       "intent-router",
-      "direct-math-engine", 
+      "direct-math-engine",
       "sql-llm",
       "logic-trace-ui",
       "offline-first",

@@ -34,7 +34,7 @@
 4. Double-click to run (no installation required)
 
 ### Method 3: Developer Version
-1. Clone repository: `git clone -b coconut https://github.com/thomaglads/InsightEngine-Desktop.git`
+1. Clone repository: `git clone https://github.com/thomaglads/coconut-ai.git`
 2. Install dependencies: `npm install`
 3. Run in development: `npm run electron:dev`
 
@@ -128,7 +128,7 @@
 4. **Data Samples**: Provide sample data that caused issues
 
 ### Feedback Channels
-- **GitHub Issues**: Create issues in the repository
+- **GitHub Issues**: [thomaglads/coconut-ai/issues](https://github.com/thomaglads/coconut-ai/issues)
 - **Direct Email**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
 - **LinkedIn DM**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
 - **Review Log Files**: Collect and analyze structured feedback

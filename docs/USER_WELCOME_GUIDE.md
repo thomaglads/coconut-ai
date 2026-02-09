@@ -50,24 +50,18 @@ Don't just look at it—try to break it.
 
 ---
 
-## 🔍 How to Give Feedback
+## 📧 How to Give Feedback
 We value **honesty** over politeness. Use the Review Log Template for structured feedback.
 
 ### Quick Feedback Options:
-1.  **Thumbs Up/Down**: Tap the feedback button on any result
-2.  **3-Question Form**: Tell us about Accuracy, Magic Moments, and Frustrations
-3.  **Review Log**: Use the template for detailed mission reports
-
-### What We're Watching:
--   **Accuracy**: Are the numbers correct?
--   **Speed**: <1s for math, <3s for SQL queries
--   **Trust**: Does the "Show Work" feature help you understand decisions?
--   **Magic Moments**: Did it solve something that would normally take hours?
+1.  **Direct Email**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
+2.  **LinkedIn**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
+3.  **Report Issues**: [GitHub Issues](https://github.com/thomaglads/coconut-ai/issues)
 
 ### Pro Tips:
--   Click **"Show Work"** on every result to see the routing decision
--   Try to break it - we want to find the edge cases
--   Screenshot weird results and note the exact question you asked
+- Click **"Show Work"** on every result to see the routing decision
+- Try to break it - we want to find the edge cases
+- Screenshot weird results and note the exact question you asked
 
 **Thank you for helping us build the future of private, reliable AI.**
 🥥 *The Coconut AI Team*
