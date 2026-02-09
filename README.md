@@ -23,40 +23,40 @@ I realized we don't need a massive LLM to do basic math.
 
 **Result:** It starts in <1 second and runs comfortably on my 8GB RAM MacBook.
 
-## 📦 Download & Install
-I've built installers for Windows (X64 & Arm64).
+## 📦 Getting Started
 
-*   **[Download Installer (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut%20AI%20Setup%201.0.0-beta.exe)**
-*   **[Download Portable (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut%20AI%201.0.0-beta.exe)**
+### Download for Windows
+Coconut AI is currently in Beta. You can download the latest installers (x64 and ARM64) from our official releases page:
 
-*(Mac & Linux builds are coming, but you can run from source easily).*
+👉 **[Download Latest Release](https://github.com/thomaglads/coconut-ai/releases)**
 
-## 🧪 Beta Testing
-This is v1.0.0-beta. It's stable, but I'm looking for feedback.
-If you break it, let me know.
+*   **Installer (.exe)**: Best for most users. Includes desktop shortcuts.
+*   **Portable (.exe)**: Run directly from your downloads folder or a USB drive. No installation required.
 
-**Contact me directly:**
-*   📧 Email: this.thoma@gmail.com
-*   💼 LinkedIn: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
+---
 
-## 👩‍💻 Run from Source
-If you're a dev and want to see how the sausage is made:
+### 👩‍💻 Run from Source
+If you are a developer or want to verify the privacy of the app yourself, you can run Coconut AI locally via Node.js:
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/thomaglads/coconut-ai.git
-cd coconut-ai
+1.  **Clone the Repo**:
+    ```bash
+    git clone https://github.com/thomaglads/coconut-ai.git
+    cd coconut-ai
+    ```
+2.  **Install Dependencies**: `npm install`
+3.  **Local AI Setup**: 
+    - Download `Llama-3.2-1B-Instruct-Q4_K_M.gguf` from HuggingFace.
+    - Create a `/models` folder in the project root and place the file inside.
+4.  **Launch**: `npm run electron:dev`
 
-# 2. Install dependencies
-npm install
+---
 
-# 3. Download the AI Model
-# Download 'Llama-3.2-1B-Instruct-Q4_K_M.gguf' from HuggingFace
-# Place it in a folder named /models at the root of the project
+## 🧪 Support & Feedback
+Since this is a beta release, your feedback is critical. If you encounter bugs or have suggestions, please reach out directly:
 
-# 4. Start the app
-npm run electron:dev
-```
+*   🐛 **Issue Tracker**: [github.com/thomaglads/coconut-ai/issues](https://github.com/thomaglads/coconut-ai/issues)
+*   📧 **Direct Email**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
+*   💼 **LinkedIn**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
 
 ## 🔒 Privacy Promise
 I wrote this tool because I care about privacy.
