@@ -43,8 +43,18 @@ If you break it, let me know.
 If you're a dev and want to see how the sausage is made:
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/thomaglads/coconut-ai.git
+cd coconut-ai
+
+# 2. Install dependencies
 npm install
+
+# 3. Download the AI Model
+# Download 'Llama-3.2-1B-Instruct-Q4_K_M.gguf' from HuggingFace
+# Place it in a folder named /models at the root of the project
+
+# 4. Start the app
 npm run electron:dev
 ```
 
