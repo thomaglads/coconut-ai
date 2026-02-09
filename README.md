@@ -26,8 +26,8 @@ I realized we don't need a massive LLM to do basic math.
 ## 📦 Download & Install
 I've built installers for Windows (X64 & Arm64).
 
-*   **[Download Installer (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut.AI.Setup.1.0.0-beta.exe)**
-*   **[Download Portable (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut.AI.1.0.0-beta.exe)**
+*   **[Download Installer (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut%20AI%20Setup%201.0.0-beta.exe)**
+*   **[Download Portable (.exe)](https://github.com/thomaglads/coconut-ai/releases/download/v1.0.0-beta/Coconut%20AI%201.0.0-beta.exe)**
 
 *(Mac & Linux builds are coming, but you can run from source easily).*
 

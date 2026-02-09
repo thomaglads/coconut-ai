@@ -4,7 +4,7 @@
  * Pure JavaScript implementation of Linear Regression.
  * Zero dependencies, Instant execution.
  */
-export const simpleForecaster = {
+const simpleForecaster = {
     /**
      * Calculate linear regression and forecast
      * @param {Array} data - Array of objects
@@ -65,3 +65,5 @@ export const simpleForecaster = {
         }
     }
 };
+
+module.exports = simpleForecaster;

@@ -1,6 +1,7 @@
 const Database = require('better-sqlite3');
 const path = require('path');
 const { parse } = require('csv-parse/sync');
+const simpleForecaster = require('../services/simpleForecaster');
 
 class MainInsightEngine {
     constructor() {
@@ -149,20 +150,38 @@ class MainInsightEngine {
             if (predictionKeywords.some(k => lowerQuestion.includes(k))) {
                 console.log('🥥 [Router] Prediction Intent Detected -> Bypassing LLM.');
 
-                // Construct a "Dump" query to get all history for Python
                 const manualSQL = `SELECT * FROM "${explicitTable}";`;
-                console.log('🥥 [Router] Executing Manual SQL:', manualSQL);
-
-                // EXECUTING THE QUERY
-                // We must actually run the SQL to get the data buffer
                 const result = this.executeQuery(manualSQL);
                 const data = result.success ? result.results : [];
 
+                if (data.length > 0) {
+                    // 🧠 MATHEMATICAL FORECASTING (Direct Math Engine)
+                    const keys = Object.keys(data[0]);
+                    const dateCol = keys.find(k => /date|time|year|month|day/i.test(k)) || keys[0];
+                    const valCol = keys.find(k => {
+                        const val = parseFloat(data[0][k]);
+                        return !isNaN(val) && isFinite(val) && !/id|date/i.test(k);
+                    }) || keys[1];
+
+                    console.log(`🥥 [Router] Running Forecast on columns: ${dateCol}, ${valCol}`);
+                    const forecast = simpleForecaster.createForecast(data, dateCol, valCol);
+
+                    if (forecast.success) {
+                        return {
+                            success: true,
+                            thought: `[Intent Router] User asked to "${question}".\n\n**Routing Decision**: Detected "Forecasting" intent. Bypassing LLM for the **Direct Math Engine** to ensure 0% hallucinations.\n\n**Math Engine Result**: ${forecast.explanation}\n\n**Strategy**: Calculated linear regression locally in JS. Found a ${forecast.result.trend} trend with ${Math.round(forecast.confidence * 100)}% confidence.`,
+                            sql: manualSQL,
+                            data: [...data, ...forecast.forecastPoints],
+                            visual_hint: 'line'
+                        };
+                    }
+                }
+
                 return {
                     success: true,
-                    thought: `[Intent Router] User asked to "${question}".\nDetected "Forecasting" intent.\n\nRunning Hardcoded Strategy: Retrieve ALL historical data from \`${explicitTable}\` so the local Python engine can run the prediction algorithms.`,
+                    thought: `[Intent Router] User asked to "${question}".\nDetected "Forecasting" intent.\n\nRunning Hardcoded Strategy: Retrieve history from \`${explicitTable}\`.`,
                     sql: manualSQL,
-                    data: data, // <--- Providing Data
+                    data: data,
                     visual_hint: 'line'
                 };
             }
