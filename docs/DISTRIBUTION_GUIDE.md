@@ -129,7 +129,8 @@
 
 ### Feedback Channels
 - **GitHub Issues**: Create issues in the repository
-- **Direct Email**: [your-email@domain.com]
+- **Direct Email**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
+- **LinkedIn DM**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
 - **Review Log Files**: Collect and analyze structured feedback
 
 ## 🌍 Distribution Methods

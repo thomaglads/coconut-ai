@@ -332,9 +332,10 @@ Coconut AI is developed by a team of privacy advocates and AI engineers who beli
 - ✅ **Full Production Deployment**
 
 ### Support:
-- 📧 **Enterprise Support**: [support@coconut-ai.com]
-- 📚 **Documentation**: [docs.coconut-ai.com](https://docs.coconut-ai.com)
-- 🐛 **Bug Reports**: [github.com/coconut-ai/issues](https://github.com/coconut-ai/issues)
-- 🎯 **Feature Requests**: [github.com/coconut-ai/discussions](https://github.com/coconut-ai/discussions)
+- 📧 **Direct Feedback**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
+- 💼 **LinkedIn**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
+- 🐛 **Bug Reports**: [github.com/thomaglads/InsightEngine-Desktop/issues](https://github.com/thomaglads/InsightEngine-Desktop/issues)
+
+*(Note: The official website is under construction. Please send all beta feedback directly to me via email or LinkedIn.)*
 
 **Coconut AI v1.0.0-beta - Production Ready** 🥥
