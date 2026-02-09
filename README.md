@@ -25,15 +25,7 @@ I realized we don't need a massive LLM to do basic math.
 
 ## 📦 Getting Started
 
-### Download for Windows
-Coconut AI is currently in Beta. You can download the latest installers (x64 and ARM64) from our official releases page:
-
-👉 **[Download Latest Release](https://github.com/thomaglads/coconut-ai/releases)**
-
-*   **Installer (.exe)**: Best for most users. Includes desktop shortcuts.
-*   **Portable (.exe)**: Run directly from your downloads folder or a USB drive. No installation required.
-
----
+*(Note: The official Windows installers will be available on my website soon. For now, you can run Coconut AI from source below.)*
 
 ### 👩‍💻 Run from Source
 If you are a developer or want to verify the privacy of the app yourself, you can run Coconut AI locally via Node.js:
