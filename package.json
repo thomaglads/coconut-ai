@@ -1,0 +1,189 @@
+{
+  "name": "coconut-ai",
+  "productName": "Coconut AI",
+  "description": "Privacy-First AI Data Analyst with Hybrid-RAG Architecture",
+  "author": "Coconut AI Team",
+  "company": "Coconut AI Inc.",
+  "license": "MIT",
+  "private": false,
+  "version": "1.0.0-beta",
+  "main": "electron.js",
+  "homepage": "https://coconut-ai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coconut-ai/coconut-ai-desktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coconut-ai/coconut-ai-desktop/issues"
+  },
+  "keywords": [
+    "ai",
+    "analytics",
+    "data-analysis",
+    "privacy",
+    "offline",
+    "hybrid-rag",
+    "llm",
+    "sql",
+    "forecasting",
+    "enterprise"
+  ],
+  "scripts": {
+    "dev": "vite --port 5175",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently -k \"cross-env BROWSER=none npm run dev\" \"wait-on http://localhost:5175 && cross-env ELECTRON_START_URL=http://localhost:5175 node electron.js\"",
+    "electron:build": "vite build && electron-builder",
+    "electron:build:win": "vite build && electron-builder --win",
+    "electron:build:mac": "vite build && electron-builder --mac",
+    "electron:build:linux": "vite build && electron-builder --linux",
+    "electron:build:portable": "vite build && electron-builder --win portable",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "clsx": "^2.1.1",
+    "csv-parse": "^6.1.0",
+    "lucide-react": "^0.563.0",
+    "node-llama-cpp": "^3.15.1",
+    "pyodide": "^0.29.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.0",
+    "tailwind-merge": "^3.4.0",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.23",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.0",
+    "globals": "^17.3.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^5.1.4",
+    "wait-on": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "build": {
+    "appId": "com.coconuta.app",
+    "productName": "Coconut AI",
+    "copyright": "Copyright © 2026 Coconut AI Inc.",
+    "directories": {
+      "output": "dist_electron",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*", 
+      "electron.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "public/",
+        "to": "public/"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "arm64"]
+        },
+        {
+          "target": "portable", 
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "public/coconut-logo.png",
+      "publisherName": "Coconut AI",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        },
+        {
+          "target": "zip",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "public/coconut-logo.png",
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": true
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": ["x64", "arm64"]
+        },
+        {
+          "target": "deb",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "icon": "public/coconut-logo.png",
+      "category": "Office"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Coconut AI",
+      "installerIcon": "public/coconut-logo.png",
+      "uninstallerIcon": "public/coconut-logo.png"
+    },
+    "dmg": {
+      "title": "Coconut AI",
+      "icon": "public/coconut-logo.png",
+      "background": "build/dmg-background.png"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "coconut-ai",
+        "repo": "coconut-ai-desktop"
+      }
+    ]
+  },
+  "coconut": {
+    "version": "1.0.0-beta",
+    "architecture": "hybrid-rag",
+    "features": [
+      "intent-router",
+      "direct-math-engine", 
+      "sql-llm",
+      "logic-trace-ui",
+      "offline-first",
+      "zero-hallucinations"
+    ],
+    "performance": {
+      "startup": "<1s",
+      "query": "<3s",
+      "forecasting": "<1s",
+      "memory": "~2GB"
+    }
+  }
+}

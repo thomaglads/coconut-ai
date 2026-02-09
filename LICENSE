@@ -1,0 +1,56 @@
+MIT License
+
+Copyright (c) 2026 Coconut AI Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+===
+
+### Coconut AI Additional Terms
+
+#### Privacy Protection
+This license includes a commitment to user privacy:
+- User data processed by this software must remain on the user's device
+- No telemetry, analytics, or usage data may be collected or transmitted
+- Any modifications must maintain the privacy-first approach
+
+#### Attribution Requirements
+When using or distributing Coconut AI:
+- Retain the "Coconut AI" branding in a visible location
+- Include a link to https://coconut-ai.com in documentation
+- Preserve copyright notices and license terms
+
+#### Commercial Use
+- Commercial use is permitted without additional licensing
+- SaaS integration is encouraged with proper attribution
+- White-labeling requires explicit permission from Coconut AI Inc.
+
+#### Support Open Source
+If you distribute modifications:
+- Consider contributing improvements back to the main project
+- Help maintain the privacy-first mission
+- Support the community of privacy-focused developers
+
+---
+
+For more information about Coconut AI and our privacy commitment, visit:
+https://coconut-ai.com/license
+
+For commercial licensing inquiries, contact:
+licensing@coconut-ai.com
