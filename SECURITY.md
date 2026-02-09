@@ -190,15 +190,15 @@ const mainWindow = new BrowserWindow({
 
 ### Reporting Process
 
-1. **Private Disclosure**: Email security@coconut-ai.com
+1. **Private Disclosure**: Email this.thoma@gmail.com
 2. **Provide Details**: Include reproduction steps, impact assessment
 3. **Wait for Response**: Security team will acknowledge within 24 hours
 4. **Coordinate Disclosure**: Work with us on responsible disclosure timeline
 5. **Public Recognition**: Security researchers credited in disclosures
 
 ### Security Contact Information
-- **Email**: security@coconut-ai.com
-- **PGP Key**: Available on request
+- **Email**: this.thoma@gmail.com
+- **LinkedIn**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
 - **Response Time**: Within 24 hours for critical issues
 - **Public Acknowledgment**: With researcher permission
 
@@ -327,8 +327,8 @@ We commit to:
 
 **Found a security issue? Please report it responsibly:**
 
-📧 **Email**: security@coconut-ai.com  
-🔐 **PGP**: Available on request  
+📧 **Email**: this.thoma@gmail.com
+💼 **LinkedIn**: [Thoma Glads Choppala](https://www.linkedin.com/in/thoma-glads-ch/)
 ⏰ **Response**: Within 24 hours for critical issues
 
 *Coconut AI - Security and Privacy by Design* 🥥
