@@ -187,8 +187,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **For upgrade instructions and compatibility notes, see the [Upgrade Guide](docs/UPGRADE.md).**
 
-**Found a bug?** Please [report it](https://github.com/coconut-ai/coconut-ai-desktop/issues).
+**Found a bug?** Please [report it](https://github.com/thomaglads/coconut-ai/issues).
 
-**Want a feature?** Please [request it](https://github.com/coconut-ai/coconut-ai-desktop/discussions).
+**Want a feature?** Please [request it](https://github.com/thomaglads/coconut-ai/discussions).
 
 *Where Privacy Meets Performance* 🥥

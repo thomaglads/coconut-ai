@@ -30,8 +30,8 @@ We believe that:
 5. **Describe expected vs actual behavior**
 
 **Where to report:**
-- GitHub Issues: [github.com/coconut-ai/coconut-ai-desktop/issues](https://github.com/coconut-ai/coconut-ai-desktop/issues)
-- Security Issues: security@coconut-ai.com (private disclosure)
+- GitHub Issues: [github.com/thomaglads/coconut-ai/issues](https://github.com/thomaglads/coconut-ai/issues)
+- Security Issues: [this.thoma@gmail.com](mailto:this.thoma@gmail.com) (private disclosure)
 
 ### 💡 Feature Requests
 
@@ -258,7 +258,7 @@ function linearRegression(data, periods) {
 ### Development
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/coconut-ai-desktop.git
+git clone https://github.com/thomaglads/coconut-ai.git
 
 # Install dependencies
 npm install
@@ -395,10 +395,10 @@ All significant contributors will be:
 ### Questions?
 - **GitHub Discussions**: Open questions for community input
 - **Development Discord**: [discord.gg/coconut-ai](https://discord.gg/coconut-ai)
-- **Email**: dev@coconut-ai.com
+- **Email**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
 
 ### Security Concerns?
-- **Private Disclosure**: security@coconut-ai.com
+- **Private Disclosure**: [this.thoma@gmail.com](mailto:this.thoma@gmail.com)
 - **PGP Key**: Available on request
 - **Response Time**: Within 24 hours for security issues
 
